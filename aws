@@ -1,0 +1,377 @@
+Perfect. Now we move to AWS Cloud real-time troubleshooting 🔥
+I’ll give you high-frequency production scenarios that are commonly asked in DevOps / SRE interviews.
+
+I’ll answer each using your structured format:
+
+Step 1 – Understand impact
+Step 2 – Inspect
+Step 3 – Possible causes
+Step 4 – Fix
+Step 5 – Monitor & Prevent
+
+These are aligned with AWS DevOps / SRE roles like Paytm, Grid Dynamics, Equifax, etc.
+
+🔥 1️⃣ EC2 Instance Not Reachable
+Step 1 – Understand Impact
+
+Is it single instance or entire ASG?
+
+Is it production?
+
+Is health check failing on ALB?
+
+Step 2 – Inspect
+
+Check:
+
+Instance status checks
+
+Security groups
+
+NACLs
+
+Route table
+
+Commands / Console:
+
+EC2 → Instance Status
+
+Check System Status & Instance Status
+
+Check public/private IP
+
+Step 3 – Possible Causes
+
+Security group blocking port
+
+NACL blocking traffic
+
+Instance failed system check
+
+SSH key issue
+
+Route table misconfiguration
+
+Instance stopped
+
+Disk full
+
+Step 4 – Fix
+
+Open required port in SG (e.g., 22, 80, 443)
+
+Verify inbound/outbound rules
+
+Restart instance
+
+Detach and attach volume if corrupted
+
+Fix route table for internet gateway
+
+Step 5 – Prevent
+
+Enable CloudWatch alarms
+
+Use ASG for auto recovery
+
+Use Bastion host properly
+
+Enable EC2 auto recovery feature
+
+🔥 2️⃣ Application Behind ALB Returning 502/503
+Step 1 – Confirm
+
+Check:
+
+Is ALB healthy?
+
+Are targets healthy?
+
+Step 2 – Inspect
+Check Target Group → Health Status
+
+Check:
+
+Target health
+
+Port mismatch
+
+Health check path
+
+Step 3 – Causes
+
+Wrong health check endpoint
+
+App crashed
+
+Security group blocking ALB
+
+Port mismatch
+
+Instance overloaded
+
+Step 4 – Fix
+
+Correct health check path
+
+Verify app listening port
+
+Increase instance capacity
+
+Fix security group rule
+
+Step 5 – Prevent
+
+Proper health checks
+
+Autoscaling enabled
+
+Monitoring on 5xx errors
+
+🔥 3️⃣ RDS Database Not Connecting
+Step 1 – Understand
+
+Is DB instance available?
+
+Is it public or private?
+
+Step 2 – Inspect
+
+Check:
+
+RDS status
+
+Security group
+
+DB endpoint
+
+Subnet group
+
+Step 3 – Causes
+
+Security group not allowing inbound
+
+Wrong credentials
+
+RDS in wrong subnet
+
+DB overloaded
+
+Max connections reached
+
+Step 4 – Fix
+
+Update SG to allow app server
+
+Reset credentials
+
+Scale instance
+
+Increase max connections
+
+Step 5 – Prevent
+
+Enable CloudWatch metrics
+
+Use connection pooling
+
+Monitor CPU & connections
+
+🔥 4️⃣ High AWS Bill Suddenly
+Step 1 – Identify Source
+
+Go to:
+
+AWS Cost Explorer
+
+Step 2 – Analyze
+
+Check:
+
+EC2 usage spike?
+
+EBS snapshot growth?
+
+Data transfer increase?
+
+NAT Gateway cost?
+
+Unused EIPs?
+
+Step 3 – Causes
+
+Orphan EBS volumes
+
+Unused load balancer
+
+Large instance type
+
+High outbound traffic
+
+No autoscaling
+
+Step 4 – Fix
+
+Delete unused volumes
+
+Rightsize instances
+
+Use Savings Plans
+
+Use S3 lifecycle rules
+
+Step 5 – Prevent
+
+Set billing alarm
+
+Tag resources properly
+
+Weekly cost review
+
+🔥 5️⃣ IAM Permission Denied Error
+Step 1 – Identify
+
+Error:
+
+AccessDenied
+Step 2 – Inspect
+
+Check IAM role
+
+Check attached policies
+
+Check trust relationship
+
+Step 3 – Causes
+
+Missing permission
+
+Wrong policy attached
+
+STS assume role failure
+
+Step 4 – Fix
+
+Attach correct policy
+
+Update inline policy
+
+Validate trust relationship
+
+Step 5 – Prevent
+
+Use least privilege
+
+Use IAM Access Analyzer
+
+Maintain role documentation
+
+🔥 6️⃣ EKS Cluster Nodes Not Joining
+Step 1 – Check Node Group
+kubectl get nodes
+Step 2 – Inspect
+
+Check EC2 instance IAM role
+
+Check security group
+
+Check bootstrap script
+
+Check kubelet logs
+
+Step 3 – Causes
+
+IAM role missing worker node policy
+
+SG blocking API server
+
+Wrong cluster name in bootstrap
+
+CNI plugin issue
+
+Step 4 – Fix
+
+Attach AmazonEKSWorkerNodePolicy
+
+Fix SG rules
+
+Validate userdata script
+
+Step 5 – Prevent
+
+Use managed node groups
+
+Monitor node status
+
+🔥 7️⃣ S3 Access Denied
+Step 1 – Identify
+
+Is bucket private?
+Is IAM user allowed?
+
+Step 2 – Inspect
+
+Bucket policy
+
+IAM role
+
+Public access block
+
+Step 3 – Causes
+
+Explicit deny in bucket policy
+
+Missing s3:GetObject
+
+Wrong region
+
+Step 4 – Fix
+
+Update bucket policy
+
+Update IAM policy
+
+Step 5 – Prevent
+
+Use least privilege
+
+Enable S3 access logging
+
+🔥 8️⃣ Lambda Function Failing
+Step 1 – Inspect
+
+Check:
+
+CloudWatch logs
+
+Lambda timeout
+
+Memory config
+
+Step 2 – Causes
+
+Timeout too low
+
+Memory too small
+
+VPC misconfiguration
+
+IAM role issue
+
+Step 3 – Fix
+
+Increase timeout
+
+Increase memory
+
+Check VPC config
+
+Update IAM role
+
+Step 4 – Prevent
+
+Add CloudWatch alarm
+
+Add retry logic
+
+Monitor duration
