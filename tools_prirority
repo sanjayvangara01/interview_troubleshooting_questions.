@@ -1,0 +1,230 @@
+Priority 1 – Kubernetes (VERY HIGH – 100% WILL BE ASKED)
+
+This will be their main focus.
+
+They will test:
+
+Must know deeply:
+
+Pod lifecycle
+
+Deployment, Service, Ingress
+
+CrashLoopBackOff debugging
+
+ImagePullBackOff debugging
+
+Resource requests & limits
+
+HPA
+
+RBAC
+
+ConfigMaps & Secrets
+
+Probes (liveness/readiness)
+
+Real scenarios they may ask:
+
+Pod crashing randomly
+
+Traffic not reaching app
+
+Deployment rollback
+
+Service not reachable
+
+Reason:
+Their JD explicitly mentions reliability, scalability, infra.
+
+🥈 Priority 2 – AWS Cloud (VERY HIGH – 95%)
+
+They will test your cloud understanding.
+
+Most important services:
+
+MUST know:
+
+IAM (roles, policies)
+
+EC2
+
+EKS
+
+ECR
+
+VPC basics
+
+Security Groups
+
+Load Balancer
+
+CloudWatch
+
+Scenarios:
+
+EKS cannot pull image from ECR
+
+EC2 not accessible
+
+Application slow in AWS
+
+IAM permission denied
+
+🥉 Priority 3 – CI/CD (Jenkins / GitHub Actions) (VERY HIGH – 90%)
+
+This is core DevOps responsibility.
+
+They will ask:
+
+Explain your pipeline
+
+Pipeline failure debugging
+
+Secret management
+
+Deployment strategy
+
+Rollback strategy
+
+Scenario example:
+
+Jenkins pipeline succeeded but deployment failed.
+
+🏅 Priority 4 – Docker (HIGH – 85%)
+
+They expect strong Docker knowledge.
+
+They will ask:
+
+Dockerfile best practices
+
+Image optimization
+
+Container startup issues
+
+ImagePullBackOff debugging
+
+🏅 Priority 5 – Terraform (HIGH – 80%)
+
+Infrastructure automation is key for this role.
+
+They will ask:
+
+State file
+
+State locking
+
+Modules
+
+terraform apply lifecycle
+
+Drift detection
+
+Scenario example:
+
+Terraform state locked — what will you do?
+
+🏅 Priority 6 – Monitoring (Prometheus, Grafana, CloudWatch) (MEDIUM–HIGH – 70%)
+
+They explicitly mention monitoring.
+
+They may ask:
+
+What do you monitor?
+
+How do you detect issues?
+
+How do you configure alerts?
+
+Scenario example:
+
+CPU usage suddenly increases.
+
+🏅 Priority 7 – Linux (MEDIUM – 60%)
+
+They will ask some Linux troubleshooting.
+
+Examples:
+
+Disk full troubleshooting
+
+Process issues
+
+Permission issues
+
+Commands:
+
+top
+
+df
+
+free
+
+ps
+
+netstat
+
+journalctl
+
+🏅 Priority 8 – Networking Basics (MEDIUM – 55%)
+
+Not deep networking, but basic.
+
+Examples:
+
+DNS resolution
+
+Service communication
+
+Security groups
+
+🏅 Priority 9 – Helm (MEDIUM – 50%)
+
+Since you are learning Helm now, they may ask basic questions.
+
+Examples:
+
+What is Helm chart
+
+values.yaml
+
+helm upgrade vs install
+
+🏅 Priority 10 – Security (MEDIUM–LOW – 40%)
+
+Basic security questions:
+
+IAM roles
+
+Kubernetes RBAC
+
+Secret management
+
+📊 Final Priority Ranking Table
+Rank	Tool	Probability
+1	Kubernetes	100%
+2	AWS	95%
+3	CI/CD (Jenkins/GHA)	90%
+4	Docker	85%
+5	Terraform	80%
+6	Monitoring	70%
+7	Linux	60%
+8	Networking	55%
+9	Helm	50%
+10	Security	40%
+🎯 MOST IMPORTANT AREAS YOU MUST MASTER BEFORE INTERVIEW
+
+Focus heavily on these 5:
+
+Kubernetes troubleshooting
+
+AWS IAM + EKS + networking
+
+CI/CD pipeline troubleshooting
+
+Terraform state & infra automation
+
+Docker container troubleshooting
+
+These 5 alone cover 80% of interview.
