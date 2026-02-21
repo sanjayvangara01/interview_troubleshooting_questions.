@@ -2,57 +2,41 @@ Interviewer Questions List
 🔹 Introduction & Role
 
 What are your day-to-day roles and responsibilities?
-
 What kind of projects are you working on currently?
-
 What DevOps skills are you utilizing right now?
 
 🔹 Kubernetes / OpenShift
 
 Are you deploying applications on Kubernetes?
-
 What AWS services have you utilized?
-
 How do you secure objects stored in S3?
-
 What additional S3 properties can you use to secure data?
 
 🔹 Terraform
 
 What kind of Terraform modules have you provisioned?
-
 How do you provision conditional resources in Terraform?
-
 How do you manage credentials securely in Terraform?
-
 In which scenarios have you used for_each?
-
 What is the purpose of a data block in Terraform?
 
 🔹 Docker
 
 What are best practices while writing a Dockerfile?
-
 What is the difference between CMD and ENTRYPOINT?
-
 Have you worked with Lambda?
 
 🔹 EC2 Automation
 
 If you terminate an EC2 daily but want pre-installed software available next day, how will you automate it?
-
 Have you used User Data? What is its purpose?
 
 🔹 Networking (VPC)
 
 What types of subnets have you used?
-
 What is the difference between public and private subnet?
-
 Where is NAT Gateway created?
-
 What is VPC Endpoint?
-
 How will you establish communication between multiple VPCs (App in VPC-A, DB in VPC-B, Notification in VPC-C)?
 
 🔹 Database
@@ -62,67 +46,48 @@ Which database versions have you worked with?
 🔹 CI/CD (Jenkins)
 
 You mentioned reducing deployment time by 70% — how did you achieve that?
-
 What is Jenkins Shared Library and how did you use it?
-
 How do you map one DNS to another DNS?
-
 What DNS record type is used for DNS mapping (e.g., CNAME)?
-
 How many worker nodes are in your cluster?
-
 How are you using SonarQube in your pipeline?
-
 How does Jenkins connect to OpenShift?
-
 What are the stages in your Jenkins pipeline?
-
 How do you manage credentials in Jenkins?
-
 If you have 10 microservices, how will you deploy them in parallel using Jenkins?
-
 Will you use single pipeline or multiple pipelines for microservices?
 
 🔹 Ansible
 
 What kind of Ansible playbooks have you written?
-
 What challenges did you face while running Ansible in complex network environments (Core/DMZ)?
 
 🔹 Monitoring
 
 Which monitoring tool are you using?
-
 How does Zabbix monitoring work?
-
 What command lists running processes in Linux?
-
 How do you calculate average CPU utilization over 15 minutes?
 
 🔹 Scripting
 
 Have you done shell scripting? What kind of tasks?
-
 How do you rotate logs in Linux?
 
 🔹 Security
 
 What security best practices do you implement in AWS/Jenkins?
-
 How do you restrict access?
 
 🔹 Cost Optimization
 
 What cost optimization activities have you implemented?
-
 How did you schedule EC2 stop/start?
-
 Did you use Lambda or EventBridge for scheduling?
 
 🔹 Docker Commands
 
 What command is used to run a Docker container?
-
 Where should you deploy a web application – EC2 or EKS?
 
 🔹 Troubleshooting Scenario
@@ -148,7 +113,6 @@ What major challenges have you faced and what did you learn?
 🔹 Infrastructure Migration
 
 How did you migrate manual infrastructure to Terraform?
-
 How did you handle hardened AMI migration?
 
 🔹 Connectivity
