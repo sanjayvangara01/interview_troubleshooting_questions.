@@ -6,39 +6,28 @@ Can you introduce yourself?
 🔹 AWS – EC2 & Networking
 
 How do you differentiate whether a server is private or public?
-
 How do you identify whether a subnet is public or private?
-
 What is the meaning of 0.0.0.0/0 in a route table?
-
 How can you automate software installation when launching an EC2 instance?
-
 If an EC2 is in a public subnet, how can you make it private without modifying the route table?
-
 What is ENI in AWS?
 
 🔹 S3
 
 How can you provide temporary access to a single object in a private S3 bucket?
-
 How can you trigger Lambda when an object is uploaded to S3?
-
 How can you automatically delete .pdf files after 6 months in S3?
-
 What is the lifecycle rule in S3?
 
 🔹 NAT Gateway & Private Access
 
 How can a private server download data from the internet?
-
 Where should NAT Gateway be created — public or private subnet?
 
 🔹 VPC Connectivity
 
 How can two applications in different AWS accounts and VPCs communicate?
-
 When do you use VPC Peering?
-
 When do you use Transit Gateway?
 
 🔹 IAM
@@ -48,39 +37,26 @@ What is Permission Boundary in IAM?
 🔹 Kubernetes
 
 Have you faced ImagePullBackOff error? How do you troubleshoot it?
-
 Which kubectl commands do you use for troubleshooting?
-
 What are probes in Kubernetes?
-
 What is the difference between Liveness and Readiness probe?
-
 What is the difference between Secrets and ConfigMaps?
-
 How do you achieve zero downtime deployment?
-
 How does Rolling Update work?
-
 What is RBAC in Kubernetes?
 
 🔹 Terraform
 
 How do you fetch existing infrastructure details in Terraform without accessing AWS console?
-
 What is Terraform data block?
-
 How do you pass output from one module to another module?
-
 How did you reduce deployment time by 20%?
 
 🔹 Monitoring
 
 How did you set up Grafana?
-
 How do you collect metrics from Kubernetes cluster?
-
 Have you integrated OpenTelemetry?
-
 What is the difference between CloudWatch Alarm and CloudWatch Events?
 
 🔹 Jenkins / CI-CD
@@ -90,15 +66,12 @@ What type of Jenkins pipelines have you developed?
 🔹 Docker
 
 What is multi-stage Dockerfile?
-
 What are the types of Docker networking?
 
 🔹 Linux
 
 How do you check CPU and memory usage in Linux?
-
 How do you check disk space?
-
 What is chown command?
 
 🔹 Ansible
@@ -108,5 +81,4 @@ What is pre-hook in Ansible?
 🔹 Behavioral
 
 What major challenges have you faced in DevOps?
-
 What did you learn from your mistakes?
