@@ -1,0 +1,76 @@
+Interviewer Questions List
+🔹 Introduction & Background
+
+Can you briefly explain your past experience?
+
+What is your comfort zone in DevOps?
+
+What do you work on day-to-day?
+
+🔹 Git & Source Control
+
+What is Git?
+
+Is Git centralized or distributed?
+
+What is the difference between GitHub and Azure Repos?
+
+Can you integrate Azure DevOps with GitHub?
+
+What is the difference between git pull and git fetch?
+
+🔹 CI/CD (Azure DevOps Based)
+
+Can you explain your complete CI/CD flow?
+
+How do you deploy Docker images to Kubernetes?
+
+How do you fetch images from the container registry during deployment?
+
+Do you generate Kubernetes manifests dynamically or store them in version control?
+
+Do you modify image tags dynamically during deployment?
+
+🔹 Kubernetes – Deployment & Availability
+
+How do you ensure zero downtime during application deployment?
+
+What is the difference between a Deployment and a ReplicaSet?
+
+What are the different types of Kubernetes Services?
+
+What is the Kubernetes Control Plane?
+
+Which control plane components run on worker nodes?
+
+What happens internally when you run kubectl apply -f deployment.yaml?
+
+How does kubelet work?
+
+What is the role of CNI (Container Network Interface)?
+
+What is the Container Runtime Interface (CRI)?
+
+🔹 Kubernetes – Networking
+
+What is Ingress in Kubernetes?
+
+Why do we use Ingress instead of a Service?
+
+How does traffic flow from kubectl → API Server → Scheduler → kubelet?
+
+🔹 Advanced Kubernetes Concepts
+
+What is a Distroless Docker Image?
+
+What is Multi-stage Docker build?
+
+What are Sidecar containers?
+
+What is a Custom Resource Definition (CRD)?
+
+What is an Admission Controller?
+
+What is a Mutating Webhook?
+
+How does Service Mesh inject sidecar containers?
